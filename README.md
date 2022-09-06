@@ -144,15 +144,13 @@ const mapDispatchToProps = dispatch => ({
 
 export default connect(mapStateToProps, mapDispatchToProps)(MyNewComponent);
 
-```
-
-Refer this [project](https://github.com/publicissapient-engineering/test-compass/tree/master/anoroc-ui) to see everything in action 
+``` 
 
 ## Setting up the Project
 
-* Pull the source code and cd to redux-punch dir.
+* Pull the source code and cd to redux-punch-mui dir.
 ```
-git clone https://github.com/vensr/redux-punch.git
+git clone https://github.com/vensr/redux-punch-mui.git
 ```
 * Install all dependencies
 ```
