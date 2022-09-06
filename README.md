@@ -1,4 +1,21 @@
 # Redux Punch MUI
+
+## Setting up the Project
+
+* Run the following command
+```
+npx @minilab-in/redux-punch-mui your-app-name
+```
+* Follow the on screen instructions to start the application
+```
+cd your-app-name && npm start
+```
+
+* Access the app at http://localhost:3000
+
+* You can then modify the code to suit your needs or take inspiration from the code to do whatever you wish to
+
+
 ## What is Redux Punch MUI?
 
 * Redux punch mui is a project recipe bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and then all the goodies of redux, react-redux, react-router-dom, redux-persist, redux-thunk and reselect are added. 
@@ -145,23 +162,6 @@ const mapDispatchToProps = dispatch => ({
 export default connect(mapStateToProps, mapDispatchToProps)(MyNewComponent);
 
 ``` 
-
-## Setting up the Project
-
-* Pull the source code and cd to redux-punch-mui dir.
-```
-git clone https://github.com/vensr/redux-punch-mui.git
-```
-* Install all dependencies
-```
-yarn install
-```
-* Start the app
-```
-yarn start
-```
-* Access the app at http://localhost:3000
-* You can then modify the code to suit your needs or take inspiration from the code to do whatever you wish to
 
 ## Containerization
 
