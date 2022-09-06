@@ -21,19 +21,19 @@ if(!checkedOut) process.exit(-1);
 console.log(`🧹 Cleaning up`);
 const deleteBinCommand = `rm -rf ${repoName}/bin`;
 const deleteBin = runCommand(deleteBinCommand);
-if(!deleteBinCommand) process.exit(-1);
+if(!deleteBin) process.exit(-1);
 
 console.log(`Installing the dependencies for the ${repoName}`)
 const installCommand = `cd ${repoName} && npm install`;
 const installDeps = runCommand(installCommand);
 if(!installDeps) process.exit(-1);
 
-console.log("🚨 the vulnerabilities indicated are a false alarm. Refer https://github.com/facebook/create-react-app/issues/11174 for more details");
+console.log("\r\n🚨 the vulnerabilities indicated are a false alarm. Refer https://github.com/facebook/create-react-app/issues/11174 for more details");
+console.log(`\r\nTo address the issue, from inside the ${repoName} directory, you can run:
 
-const auditCommand = `npm audit --omit=dev`;
-console.log(`🔔 Running ${auditCommand} \r\n`);
-const omitCommand = runCommand(auditCommand);
-if(!omitCommand) process.exit(-1);
+    npm audit --omit=dev
+    Omits the development dependencies while auditing.
+`);
 
 console.log(`\r\nInside ${repoName} directory, you can run several commands:
 

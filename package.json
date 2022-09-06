@@ -1,6 +1,6 @@
 {
   "name": "@minilab-in/redux-punch-mui",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "bin": "./bin/cli.js",
   "description": "Redux punch is a project recipe bootstrapped with Create React App and then all the goodies of redux, react-redux, react-router-dom, redux-persist, redux-thunk and reselect are added.",
   "dependencies": {
