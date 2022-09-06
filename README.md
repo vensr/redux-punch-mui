@@ -165,31 +165,17 @@ yarn start
 * Access the app at http://localhost:3000
 * You can then modify the code to suit your needs or take inspiration from the code to do whatever you wish to
 
-## Try using Docker
-
-Try running the app without setting up any code
-
-* Pull docker image
-```
-docker pull venkatesh5/redux-punch
-```
-* Run the image
-```
-docker run -it -p 3000:3000 venkatesh5/redux-punch
-```
-
-## Running in Production
+## Containerization
 
 The project contains a docker file that can be used to build the docker image to run in production. 
 
 * Build the image using
 ```
-docker build -t redux-punch .
+docker build -t redux-punch-mui .
 ```
 * Run the built image using 
 ```
-docker run -it -p 3000:3000 redux-punch
+docker run -it -p 3000:3000 redux-punch-mui
 ```
 * Access the app at the http://localhost:3000
 
-* To deploy the application on Kubernetes and ArgoCD check [redux-punch-deploy](https://github.com/vensr/redux-punch-deploy)
